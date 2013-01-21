@@ -1,0 +1,18 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /path/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /path/index.php?error=1 [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+#RewriteEngine On
+RewriteBase /path/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule . /path/index.php?error=2 [L]
+</IfModule>
