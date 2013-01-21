@@ -2,7 +2,7 @@
 session_start();
 require_once("dispatcher.php");
 
-echo "hay cambios";
+echo "ya no hay cambios";
 
 
 //	OPERACIONES CON UNA SESION DE USUARIO
